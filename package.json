@@ -10,7 +10,6 @@
     "migrate:prod": "node dist/config/migrate.js"
   },
   "dependencies": {
-    "-": "^0.0.1-security.1",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^2.4.0",
     "cors": "^2.8.5",
