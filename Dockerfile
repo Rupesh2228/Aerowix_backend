@@ -13,4 +13,4 @@ RUN npm ci --omit=dev --legacy-peer-deps
 COPY --from=build /app/dist ./dist
 COPY --from=build /app/src/config/schema.sql ./dist/config/schema.sql
 EXPOSE 5000
-CMD ["node", "dist/server.js"]
+CMD ["sh", "-c", "node dist/config/migrate.js && node dist/server.js"]
